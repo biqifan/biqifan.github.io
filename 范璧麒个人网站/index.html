@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="范璧麒的个人作品集网站：晋中信息学院软件工程 2027 届，按板块整理我的实习实践、项目作品、校园组织经历，以及亲手策划执行的校园活动，每段经历都附可点开的原始记录。">
+  <title>范璧麒 · 个人作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%233b2a7e'/%3E%3Ccircle%20cx='32'%20cy='25'%20r='11'%20fill='%23ffffff'/%3E%3Cpath%20d='M11%2056c0-12%209-19%2021-19s21%207%2021%2019'%20fill='%23cbb3ef'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="主导航">
+      <a href="#hero" class="nav__brand" aria-label="返回首页">范璧麒<span class="nav__brand-dot">。</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">关于我</a></li>
+        <li><a href="#activities" class="nav__link">活动作品</a></li>
+        <li><a href="#internship" class="nav__link">实习经历</a></li>
+        <li><a href="#projects" class="nav__link">项目实践</a></li>
+        <li><a href="#campus" class="nav__link">校园经历</a></li>
+        <li><a href="#skills" class="nav__link">技能工具</a></li>
+        <li><a href="#honors" class="nav__link">证书荣誉</a></li>
+        <li><a href="#contact" class="nav__cta">联系我</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 海报首页：保留互动人物形象 -->
+    <section class="hero" id="hero" aria-label="个人作品集首页">
+      <div class="hero__mid" aria-hidden="true"></div>
+      <div class="hero__welcome" aria-hidden="true">欢迎光临</div>
+      <div class="hero__idtag" aria-hidden="true">
+        <span class="hero__idtag-i">I AM</span>
+        <span class="hero__idtag-role">CLASS OF 2027</span>
+      </div>
+      <div class="hero__copy" aria-hidden="true">©范璧麒 / 个人作品集</div>
+
+      <div class="bust" id="bust" role="button" tabindex="0" aria-label="范璧麒的互动 IP 形象，点击或按回车键可打招呼" title="点我一下试试">
+        <div class="bust__head" id="bustHead">
+          <img class="bust__img" src="images/bust-front.png" alt="" draggable="false">
+          <img class="pupil pupil--left" src="images/pupil-left.png" alt="" draggable="false">
+          <img class="pupil pupil--right" src="images/pupil-right.png" alt="" draggable="false">
+          <img class="lid lid--left" src="images/lid-left.png" alt="" draggable="false">
+          <img class="lid lid--right" src="images/lid-right.png" alt="" draggable="false">
+        </div>
+        <div class="bust__torso">
+          <img class="bust__img" src="images/bust-front.png" alt="范璧麒的卡通 IP 半身形象" draggable="false">
+        </div>
+      </div>
+
+      <nav class="hero__badges" aria-label="栏目快捷导航">
+        <a class="burst burst--tl" href="#campus"><span>校园经历</span></a>
+        <a class="burst burst--tc" href="#internship"><span>实习经历</span></a>
+        <a class="burst burst--tr" href="#projects"><span>项目实践</span></a>
+        <a class="burst burst--ml" href="#about"><span>关于我</span></a>
+        <a class="burst burst--mr" href="#activities"><span>活动作品</span></a>
+      </nav>
+
+      <div class="hero__title" aria-label="范璧麒的个人作品集">
+        <p class="hero__title-line">范璧麒の</p>
+        <p class="hero__title-line">作品集</p>
+      </div>
+      <div class="hero__meet" aria-hidden="true">THIS IS MY PERSONAL WEBSITE<br>NICE TO MEET YOU</div>
+      <div class="hero__job">
+        <span class="hero__job-label">这里是</span>
+        <span class="hero__job-pill">我的作品与活动</span>
+      </div>
+      <div class="hero__chips" aria-label="移动端栏目导航">
+        <a href="#about">关于我</a>
+        <a href="#activities">活动作品</a>
+        <a href="#internship">实习经历</a>
+        <a href="#projects">项目实践</a>
+        <a href="#honors">证书荣誉</a>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="向下查看关于我"><span></span></a>
+    </section>
+
+    <!-- ===== 模块 01：关于我 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">01</span>
+            <div class="section__heading-text">
+              <span class="section__label">ABOUT ME</span>
+              <h2 class="section__title">关于我</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">软件工程科班出身，两段运营实习，四年学生组织经历，以及一整套亲手策划执行的校园活动。本模块包含以下三块内容。</p>
+            <ol class="section__toc">
+              <li><b>1.1</b>基本资料</li>
+              <li><b>1.2</b>自我介绍</li>
+              <li><b>1.3</b>关键数据</li>
+            </ol>
+          </div>
+        </header>
+
+        <div class="about__grid">
+          <!-- 1.1 基本资料 -->
+          <div class="sub-block reveal">
+            <div class="sub-block__head"><b>1.1</b><h3>基本资料</h3><span>基本信息一览</span></div>
+            <aside class="profile-card" aria-label="个人基本信息">
+              <figure class="about__photo">
+                <img src="images/avatar-front.jpg" alt="范璧麒的卡通形象">
+              </figure>
+              <div class="profile-card__name">
+                <h3>范璧麒</h3>
+                <span>软件工程 · 2027 届</span>
+              </div>
+              <dl class="info-table">
+                <div class="info-table__row"><dt>学校</dt><dd>晋中信息学院</dd></div>
+                <div class="info-table__row"><dt>专业</dt><dd>软件工程（本科）</dd></div>
+                <div class="info-table__row"><dt>政治面貌</dt><dd>入党发展对象</dd></div>
+                <div class="info-table__row"><dt>现居</dt><dd>北京</dd></div>
+                <div class="info-table__row"><dt>身份</dt><dd>学生 · 活动策划 · 创作者</dd></div>
+              </dl>
+              <a class="button button--primary button--full" href="#activities">去看看我的活动作品</a>
+            </aside>
+          </div>
+
+          <!-- 1.2 自我介绍 -->
+          <div class="about__content">
+            <div class="sub-block reveal">
+              <div class="sub-block__head"><b>1.2</b><h3>自我介绍</h3><span>一句话概述与三段支撑</span></div>
+              <span class="eyebrow">HELLO, I AM FAN BIQI</span>
+              <h3 class="about__statement">把一件事拆成节点，<br>然后盯到它真的发生。</h3>
+              <p class="about__lead">我是范璧麒，晋中信息学院软件工程 2027 届本科生。这个站点把我做过的事按板块整理出来：掌阅、闪送两段运营实习，几个技术项目，四年班级团支书、社团创始社长与学生会艺术/宣传部门的组织经历，以及我亲手策划、执行并被校媒和地方媒体报道过的一系列校园活动。每一段经历都附了可以点开的原始记录，欢迎随意逛逛。</p>
+              <dl class="basis-list">
+                <div><dt>技术底盘</dt><dd>软件工程本科，理解研发流程与系统逻辑，能自己取数、做原型、把需求落到可运行的版本。</dd></div>
+                <div><dt>运营底盘</dt><dd>掌阅广告变现、闪送渠道运营两段实习，对指标、活动、用户增长有真实手感。</dd></div>
+                <div><dt>组织底盘</dt><dd>四年团支书、社团从 0 到 1、学生会艺术部与宣传部，长期负责跨部门协调与活动落地。</dd></div>
+              </dl>
+              <div class="skill-list" aria-label="常用能力关键词">
+                <span>活动策划落地</span><span>数据复盘</span><span>需求拆解</span><span>原型设计</span><span>跨部门协作</span><span>公众号内容</span>
+              </div>
+            </div>
+
+            <!-- 1.3 关键数据 -->
+            <div class="sub-block reveal">
+              <div class="sub-block__head"><b>1.3</b><h3>关键数据</h3><span>四项可核对的经历规模</span></div>
+              <div class="stats" aria-label="个人经历概览">
+                <div class="stat-card"><span class="stat-card__num" data-count="4">4</span><span class="stat-card__unit">年</span><span class="stat-card__label">班级团支书</span></div>
+                <div class="stat-card"><span class="stat-card__num" data-count="2">2</span><span class="stat-card__unit">段</span><span class="stat-card__label">运营实习</span></div>
+                <div class="stat-card"><span class="stat-card__num" data-count="13">13</span><span class="stat-card__unit">场</span><span class="stat-card__label">主讲与承办活动</span></div>
+                <div class="stat-card"><span class="stat-card__num" data-count="6">6</span><span class="stat-card__unit">项</span><span class="stat-card__label">证书荣誉</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 模块 02：实习经历 ===== -->
+    <section class="section section--alt" id="internship">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">02</span>
+            <div class="section__heading-text">
+              <span class="section__label">INTERNSHIP</span>
+              <h2 class="section__title">实习经历</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">每段实习按「负责范围 → 关键动作 → 量化结果」三段拆开写，结果可逐条核对。</p>
+            <ol class="section__toc">
+              <li><b>2.1</b>掌阅科技 · 广告变现</li>
+              <li><b>2.2</b>闪送 · 渠道运营</li>
+            </ol>
+          </div>
+        </header>
+
+        <div class="intern-stack">
+          <article class="intern-card reveal">
+            <div class="intern-card__aside">
+              <div class="intern-card__logo" aria-hidden="true">掌阅</div>
+              <span class="intern-card__no">2.1</span>
+              <span class="intern-card__time">2026.07—2026.09</span>
+            </div>
+            <div class="intern-card__body">
+              <div class="intern-card__title">
+                <div><h3>掌阅科技股份有限公司</h3><p class="intern-card__role">商业化运营 / 用户运营实习生</p></div>
+                <span class="intern-card__badge">数字阅读 · 广告变现</span>
+              </div>
+              <p class="intern-card__scope"><b>负责范围</b>对接华为 / vivo / OPPO 及穿山甲、优量汇等广告联盟，跟进从请求到留存的转化漏斗，对 CTR、eCPM、填充率等核心指标负责。</p>
+              <div class="intern-card__cols">
+                <div class="intern-card__col">
+                  <h4>关键动作</h4>
+                  <ul>
+                    <li><strong>全链路运营</strong><span>理解 DSP→ADX→SSP 链路，覆盖请求 → 展示 → 点击 → 下载 → 激活 → 留存全漏斗。</span></li>
+                    <li><strong>指标归因</strong><span>每日跟踪 CTR / eCPM / 填充率，建立流量侧、广告侧、平台侧三维归因法，定位 DAU 流量结构与渠道预算异常并推动恢复。</span></li>
+                    <li><strong>增长测试</strong><span>主导 OPPO 渠道 PUSH A/B 测试，合并低效人群包、优化文案，形成触达—回收—调优闭环。</span></li>
+                    <li><strong>资料沉淀</strong><span>配置福利页与福利卡促活，梳理 PUSH 全流程 SOP 并输出周度报表。</span></li>
+                  </ul>
+                </div>
+                <div class="intern-card__col intern-card__col--result">
+                  <h4>量化结果</h4>
+                  <ul class="metric-list">
+                    <li><strong>25%</strong><span>PUSH 点击率，由 20% 提升（+5pct）</span></li>
+                    <li><strong>12</strong><span>个节点的 PUSH 全流程 SOP</span></li>
+                    <li><strong>2 天</strong><span>新人上手周期，原为 1 周</span></li>
+                    <li><strong>30+</strong><span>份累计输出报表</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="intern-card reveal">
+            <div class="intern-card__aside">
+              <div class="intern-card__logo" aria-hidden="true">闪送</div>
+              <span class="intern-card__no">2.2</span>
+              <span class="intern-card__time">2026.11—至今</span>
+            </div>
+            <div class="intern-card__body">
+              <div class="intern-card__title">
+                <div><h3>北京同城必应科技有限公司（闪送）</h3><p class="intern-card__role">渠道运营实习生</p></div>
+                <span class="intern-card__badge">即时配送 · 渠道增长</span>
+              </div>
+              <p class="intern-card__scope"><b>负责范围</b>负责主流应用商店渠道效果监测与外部合作渠道的全链路配置，用数据驱动渠道拉新与用户促活，并跨设计、法务、财务推进合作落地。</p>
+              <div class="intern-card__cols">
+                <div class="intern-card__col">
+                  <h4>关键动作</h4>
+                  <ul>
+                    <li><strong>渠道运营与增长</strong><span>主导华为 / OPPO / 小米 / vivo / 荣耀应用商店效果监测，跟踪自然搜索与竞品词排名，推动品牌词在搜索场景优先露出，直接驱动渠道拉新。</span></li>
+                    <li><strong>渠道配置与促活</strong><span>独立完成广告位排期、专属券码创建、API 接口对接与 H5 落地页上线，同步推进功能与页面类需求的提报及验收。</span></li>
+                    <li><strong>跨部门协同</strong><span>向设计输出素材需求，协同法务完成合同审核、对接财务处理发票对账，联动合作方统筹线上线下物料。</span></li>
+                    <li><strong>数据驱动</strong><span>用 SQL 提取业务数据，依托内部 BI 平台完成渠道监控与效果复盘，输出优化方案并推动落地。</span></li>
+                  </ul>
+                </div>
+                <div class="intern-card__col intern-card__col--result">
+                  <h4>量化结果</h4>
+                  <ul class="metric-list">
+                    <li><strong>5 家</strong><span>主流应用商店渠道并行监测</span></li>
+                    <li><strong>全链路</strong><span>渠道配置独立完成并上线</span></li>
+                    <li><strong>SQL+BI</strong><span>日常取数与渠道复盘</span></li>
+                    <li><strong>线下</strong><span>参展拓客与异业合作拓展</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 模块 03：项目实践 ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">03</span>
+            <div class="section__heading-text">
+              <span class="section__label">PROJECTS</span>
+              <h2 class="section__title">项目实践</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">四个项目按能力方向分成两组：产品侧看从需求到落地，测试侧看严谨与验收。</p>
+            <ol class="section__toc">
+              <li><b>3.1</b>产品方向（2 项）</li>
+              <li><b>3.2</b>质量与测试（2 项）</li>
+            </ol>
+          </div>
+        </header>
+
+        <div class="project-group">
+          <div class="group-head reveal">
+            <span class="group-head__no">3.1</span>
+            <h3>产品方向</h3>
+            <p>从需求梳理到功能落地的完整链路</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-card__meta"><span>项目负责人</span><time>HarmonyOS</time></div>
+              <h3>鸿蒙兴趣社交 App · 从 0 到 1</h3>
+              <p>作为负责人走完产品全流程：从需求梳理、功能规划到核心功能落地，协调前后端进度。</p>
+              <ul class="project-card__points">
+                <li>规划活动发布、同城搜索、实时导航、即时通讯等核心功能</li>
+                <li>基于 Stage 模型与 ArkTS / ArkUI 完成主要模块，集成 HMS Core LBS</li>
+              </ul>
+              <p class="project-card__result"><span>结果</span>4 个核心功能模块全部实现，产品从想法推进到可运行版本</p>
+              <ul class="tag-list"><li>产品负责</li><li>需求分析</li><li>0→1</li></ul>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-card__meta"><span>独立完成</span><time>课程项目</time></div>
+              <h3>产品原型与需求分析</h3>
+              <p>从业务需求出发完成界面原型与流程梳理，把想法变成可讨论、可验证的方案。</p>
+              <ul class="project-card__points">
+                <li>用墨刀完成用户界面原型，配合 XMind 拆解需求结构</li>
+                <li>用 Visio 绘制订货业务流程数据流图，梳理业务流转逻辑</li>
+              </ul>
+              <p class="project-card__result"><span>结果</span>形成原型、需求树与业务流程图三份可评审材料</p>
+              <ul class="tag-list"><li>墨刀</li><li>XMind</li><li>Visio</li></ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group">
+          <div class="group-head reveal">
+            <span class="group-head__no">3.2</span>
+            <h3>质量与测试</h3>
+            <p>功能用例、性能压测与交付前验收</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-card__meta"><span>项目负责人</span><time>JMeter 5.5</time></div>
+              <h3>电商系统功能与性能测试</h3>
+              <p>覆盖功能用例设计与接口性能测试，用数据支撑系统能否上线的判断。</p>
+              <ul class="project-card__points">
+                <li>用等价类、边界值方法设计测试用例</li>
+                <li>JMeter 多接口串联，完成 10 用户并发测试，监控吞吐量、平均响应时间与 90%Line</li>
+              </ul>
+              <p class="project-card__result"><span>结果</span>输出完整测试复盘报告，定位性能瓶颈并形成可复用测试流程</p>
+              <ul class="tag-list"><li>用例设计</li><li>性能压测</li><li>复盘报告</li></ul>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-card__meta"><span>开发 + 验收</span><time>微信小程序</time></div>
+              <h3>优购电商小程序 · 测试与验收</h3>
+              <p>完成电商核心购物链路的功能实现，并以测试视角负责最终质量验收。</p>
+              <ul class="project-card__points">
+                <li>基于 MINA 框架完成商品、分类、购物车、订单结算、个人中心 5 大页面</li>
+                <li>封装网络请求拦截器，实现购物车缓存与订单结算逻辑</li>
+              </ul>
+              <p class="project-card__result"><span>结果</span>17 条黑盒用例完成双端功能验收与问题回归</p>
+              <ul class="tag-list"><li>黑盒测试</li><li>功能验收</li><li>购物流程</li></ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 模块 04：校园经历 ===== -->
+    <section class="section section--alt" id="campus">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">04</span>
+            <div class="section__heading-text">
+              <span class="section__label">CAMPUS</span>
+              <h2 class="section__title">校园经历</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">四段组织经历，按「职责 → 动作 → 成果」拆开，说明我协调过什么、拿到过什么。</p>
+            <ol class="section__toc">
+              <li><b>4.1</b>班级团支书</li>
+              <li><b>4.2</b>模拟法庭创始社长</li>
+              <li><b>4.3</b>学生会艺术部主席</li>
+              <li><b>4.4</b>学生会宣传部部长</li>
+            </ol>
+          </div>
+        </header>
+
+        <div class="campus-grid">
+          <article class="campus-card reveal">
+            <div class="campus-card__meta"><span class="campus-card__no">4.1</span><time>2023.09—2027.07</time><span class="campus-card__role">学生工作</span></div>
+            <h3>班级团支书</h3>
+            <dl class="campus-card__detail">
+              <div><dt>职责</dt><dd>统筹支部建设，负责主题团日、志愿服务与班级日常管理。</dd></div>
+              <div><dt>动作</dt><dd>策划并执行完满团支部系列活动，撰写新闻稿对接校媒报道，推进团员发展与积极分子推荐。</dd></div>
+            </dl>
+            <p class="campus-card__result"><span>成果</span>所在远景 2303 团支部获评 2024—2025 学年校级“十佳五四红旗团支部”。</p>
+          </article>
+
+          <article class="campus-card reveal">
+            <div class="campus-card__meta"><span class="campus-card__no">4.2</span><time>2025—2026</time><span class="campus-card__role">社团建设</span></div>
+            <h3>模拟法庭协会 · 创始社长</h3>
+            <dl class="campus-card__detail">
+              <div><dt>职责</dt><dd>从零创建社团并主持运营，负责章程、招新与全年活动规划。</dd></div>
+              <div><dt>动作</dt><dd>撰写多份活动策划书，组织月度模拟法庭、校级大赛、法院观摩与普法宣传。</dd></div>
+            </dl>
+            <p class="campus-card__result"><span>成果</span>社团获评校级“十佳社团”，个人获“优秀社长”，活动获山西晚报等媒体报道（详见活动作品）。</p>
+          </article>
+
+          <article class="campus-card reveal">
+            <div class="campus-card__meta"><span class="campus-card__no">4.3</span><time>在校期间</time><span class="campus-card__role">文艺组织</span></div>
+            <h3>学院学生会 · 艺术部主席</h3>
+            <dl class="campus-card__detail">
+              <div><dt>职责</dt><dd>统筹学院文艺与艺术实践活动，牵头节日文化、合唱、戏剧等品牌活动。</dd></div>
+              <div><dt>动作</dt><dd>策划“泉鸣盏浮”清明文化活动、合唱大赛、戏剧大赛与春日艺术实践。</dd></div>
+            </dl>
+            <p class="campus-card__result"><span>成果</span>多场院级文艺活动按期交付，形成可复用的活动分工与现场执行方法。</p>
+          </article>
+
+          <article class="campus-card reveal">
+            <div class="campus-card__meta"><span class="campus-card__no">4.4</span><time>在校期间</time><span class="campus-card__role">宣传传播</span></div>
+            <h3>学院学生会 · 宣传部部长</h3>
+            <dl class="campus-card__detail">
+              <div><dt>职责</dt><dd>负责学院活动的新闻稿、海报与公众号内容，对接校媒传播。</dd></div>
+              <div><dt>动作</dt><dd>统筹活动宣传品制作、后期宣传与公众号推文，覆盖学院重点活动。</dd></div>
+            </dl>
+            <p class="campus-card__result"><span>成果</span>把多场活动沉淀为可检索的图文记录，活动内外宣阅读量持续提升。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 模块 05：活动作品 ===== -->
+    <section class="section" id="activities">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">05</span>
+            <div class="section__heading-text">
+              <span class="section__label">ACTIVITIES</span>
+              <h2 class="section__title">活动作品</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">这是我亲手策划、执行并被校媒与地方媒体报道过的校园活动。点击任意卡片，可跳转到对应的公众号 / 媒体原文。</p>
+            <ol class="section__toc">
+              <li><b>5.1</b>模拟法庭协会</li>
+              <li><b>5.2</b>艺术实践与文艺</li>
+              <li><b>5.3</b>学院与对外交流</li>
+            </ol>
+          </div>
+        </header>
+
+        <!-- 5.1 模拟法庭协会：品牌概览 -->
+        <div class="act-hero reveal">
+          <div>
+            <span class="act-hero__eyebrow">5.1 · 模拟法庭协会 · 创始社长</span>
+            <h3>把“身边的法律”办成一门沉浸式实战课</h3>
+            <p class="lead">2025 年 5 月从零创建模拟法庭协会，围绕电信诈骗、外卖维权、实习欠薪、直播侵权、预付卡陷阱等大学生真实困境，打造“法理启蒙—庭审实战—技能淬炼—成长蜕变”四堂沉浸式活动。全年开展月度模拟法庭、走进太谷区人民法院观摩、承办第十届校级模拟法庭大赛，并把活动推到了山西晚报等地方媒体。</p>
+          </div>
+          <div class="act-stats">
+            <div class="act-stat"><b>13 场</b><span>年度模拟法庭活动</span></div>
+            <div class="act-stat"><b>1500+</b><span>累计覆盖学生人次</span></div>
+            <div class="act-stat"><b>4.98 / 5</b><span>会员满意度评分</span></div>
+            <div class="act-stat"><b>1.5 万+</b><span>内外宣累计阅读量</span></div>
+          </div>
+        </div>
+
+        <div class="act-group reveal">
+          <div class="group-head act-group__head">
+            <span class="group-head__no">模拟法庭</span>
+            <h3>活动原文记录</h3>
+            <p>点击卡片跳转公众号 / 媒体报道</p>
+          </div>
+          <div class="act-grid">
+            <a class="act-card" href="https://mp.weixin.qq.com/s/YxQjB7PcJc8QHtLNMGfUwQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">校级赛事</span><span class="act-card__arrow">↗</span></div>
+              <h3>晋中信息学院第十届模拟法庭大赛决赛圆满落幕</h3>
+              <span class="act-card__meta">校级大赛 · 承办</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/mPvmUjZkBsxXB581WlyCqw" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">宪法周</span><span class="act-card__arrow">↗</span></div>
+              <h3>宪法精神植校园 法治之光映青春——2025 年宪法周系列活动纪实</h3>
+              <span class="act-card__meta">校媒 · 远景 × 通识</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/zprkMZQcKaMHxxz6jpw-wQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">社团巡礼节</span><span class="act-card__arrow">↗</span></div>
+              <h3>「庭」身而出！模拟法庭上演“薪权益保卫战”</h3>
+              <span class="act-card__meta">实习欠薪主题</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/TvZUI9c08S_1xrHMPuP9lw" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">消费维权</span><span class="act-card__arrow">↗</span></div>
+              <h3>「舌尖上的正义！」模拟法庭为信院 er 消费权益筑牢防线</h3>
+              <span class="act-card__meta">外卖 / 食品安全</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/TePBBduXrVFJSf2uXU62vg" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">预付卡</span><span class="act-card__arrow">↗</span></div>
+              <h3>法槌敲响，维权有方！这场模拟法庭让每一次办卡都更有底气</h3>
+              <span class="act-card__meta">预付卡陷阱主题</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/xMAs-EEBKjXiWq84E95pug" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">防诈骗</span><span class="act-card__arrow">↗</span></div>
+              <h3>辨假维权守底线，法护青春“充”安全</h3>
+              <span class="act-card__meta">充值诈骗主题</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/kx2LXuOg0jYwbV7f9kg7DQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">版权侵权</span><span class="act-card__arrow">↗</span></div>
+              <h3>图片“失真”怎么办？晋中信息学院模拟法庭教你维权</h3>
+              <span class="act-card__meta">直播 / 图片侵权</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/ejKEKgyoIZgeE0nG6yz0nw" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">版权知识</span><span class="act-card__arrow">↗</span></div>
+              <h3>拒绝侵权“抄作业”！沉浸式模拟法庭解锁版权新知识</h3>
+              <span class="act-card__meta">版权普法</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/I8vb2NKzRfFha5CTp-ZiZA" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">思辨主题</span><span class="act-card__arrow">↗</span></div>
+              <h3>当“好心”站上被告席，“善良”还是“冷漠”我们该如何选择？</h3>
+              <span class="act-card__meta">法理思辨</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/b8ss0s0Sm2ZKIDyKbAURNg" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">安全教育</span><span class="act-card__arrow">↗</span></div>
+              <h3>这堂“维权课”，在画里也在心里</h3>
+              <span class="act-card__meta">安全教育周</span>
+            </a>
+            <a class="act-card act-card--media" href="https://app-new.sxwbs.com/pages/2025/11/05/a306d97befaa4008968466e66dc151a4.html" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag act-card__tag--media">山西晚报</span><span class="act-card__arrow">↗</span></div>
+              <h3>晋中信息学院：模拟法庭聚焦外卖维权 为学子筑牢消费权益防线</h3>
+              <span class="act-card__meta">地方媒体报道</span>
+            </a>
+            <a class="act-card act-card--media" href="https://app-new.sxwbs.com/pages/2026/03/23/ad03f846cbb04dba86a75c0ae53d267d.html" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag act-card__tag--media">山西晚报</span><span class="act-card__arrow">↗</span></div>
+              <h3>晋中信息学院模拟法庭敲警钟 大学生消费维权有“法”可依</h3>
+              <span class="act-card__meta">地方媒体报道</span>
+            </a>
+            <a class="act-card act-card--media" href="https://app-new.sxwbs.com/pages/2026/05/28/c1052fe4459d42c8a2c9e9aff4c1ee92.html" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag act-card__tag--media">山西晚报</span><span class="act-card__arrow">↗</span></div>
+              <h3>沉浸式普法入校园 晋中信息学院模拟法庭揭穿“善意陷阱”</h3>
+              <span class="act-card__meta">地方媒体报道</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5.2 艺术实践与文艺 -->
+        <div class="act-group reveal">
+          <div class="group-head act-group__head">
+            <span class="group-head__no">艺术实践</span>
+            <h3>节日文化与文艺活动</h3>
+            <p>艺术部 / 宣传部组织</p>
+          </div>
+          <div class="act-grid">
+            <a class="act-card" href="https://mp.weixin.qq.com/s/00TUNP0RxS27m1kBR1HBsQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">清明文化</span><span class="act-card__arrow">↗</span></div>
+              <h3>泉鸣盏浮｜清明不只有雨纷纷，还有青团上的墨香与茶烟</h3>
+              <span class="act-card__meta">青团 · 品茗 · 书法 · 捣翠揉香</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/HV20EC0I3k-qlKN55wBZOQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">春日艺术</span><span class="act-card__arrow">↗</span></div>
+              <h3>艺术实践｜拾叶凝绿守自然，AI 定格春日瞬间</h3>
+              <span class="act-card__meta">自然采集 × AI 创作</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/Qsi931SuwwuUvXTIHaJXTw" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">新年活动</span><span class="act-card__arrow">↗</span></div>
+              <h3>你好 2026｜星河铺远景，新乐启“新”辰</h3>
+              <span class="act-card__meta">新年文艺活动</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/OawrlC-ynq4xVxyHBhCE0Q" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">人声乐团</span><span class="act-card__arrow">↗</span></div>
+              <h3>星辰人声乐团的「声」而不凡之路</h3>
+              <span class="act-card__meta">乐团纪实</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/RwmasUashg7Nc_L9YyAbNQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">合唱大赛</span><span class="act-card__arrow">↗</span></div>
+              <h3>合唱大赛｜幸福就在自己手中，声音化作心灵的叮咚</h3>
+              <span class="act-card__meta">校级合唱赛事</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/pjneUWjIrrEPu9GAzAh7Xg" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">戏剧大赛</span><span class="act-card__arrow">↗</span></div>
+              <h3>戏剧大赛｜当我成为你，终于学会理解你</h3>
+              <span class="act-card__meta">校园戏剧赛事</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5.3 学院与对外交流 -->
+        <div class="act-group reveal">
+          <div class="group-head act-group__head">
+            <span class="group-head__no">学院活动</span>
+            <h3>院级与对外交流</h3>
+            <p>参与并负责宣传记录</p>
+          </div>
+          <div class="act-grid">
+            <a class="act-card" href="https://mp.weixin.qq.com/s/3B6YWV2fG-zlc2QN0TFnHw" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">院长面对面</span><span class="act-card__arrow">↗</span></div>
+              <h3>指尖卷出温情味，暖心共膳赴成长</h3>
+              <span class="act-card__meta">院级交流活动</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/lBGaMKmNL3LSsfw_VdgCFQ" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">对外交流</span><span class="act-card__arrow">↗</span></div>
+              <h3>于山城，见通识｜远景学子赴重庆参加通识研讨会</h3>
+              <span class="act-card__meta">校际交流</span>
+            </a>
+            <a class="act-card" href="https://mp.weixin.qq.com/s/TTSn6Jhx2GcRORcLZqsXUA" target="_blank" rel="noopener">
+              <div class="act-card__top"><span class="act-card__tag">对外交流</span><span class="act-card__arrow">↗</span></div>
+              <h3>当晋饼哲学遇上渝锅智慧：共筑成长全面“景”图</h3>
+              <span class="act-card__meta">校际交流纪实</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 模块 06：技能工具 ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">06</span>
+            <div class="section__heading-text">
+              <span class="section__label">TOOLKIT</span>
+              <h2 class="section__title">技能工具</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">按用途分三组：数据与运营、产品与设计、工程与内容。只列真实用过、能上手交付的。</p>
+            <ol class="section__toc">
+              <li><b>6.1</b>数据与运营</li>
+              <li><b>6.2</b>产品与设计</li>
+              <li><b>6.3</b>工程与内容</li>
+            </ol>
+          </div>
+        </header>
+
+        <div class="skill-grid">
+          <div class="skill-group reveal">
+            <div class="skill-group__head"><b>6.1</b><h3>数据与运营</h3></div>
+            <ul>
+              <li><strong>帆软 BI 看板</strong><span>搭建与维护运营看板，日常指标监控</span></li>
+              <li><strong>Excel</strong><span>函数与数据透视，周度报表与复盘</span></li>
+              <li><strong>SQL（入门）</strong><span>基础查询取数，能自己拉数据验证结论</span></li>
+              <li><strong>指标与测试</strong><span>CTR / eCPM / 填充率监控、A/B 测试、用户分层、归因分析</span></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group__head"><b>6.2</b><h3>产品与设计</h3></div>
+            <ul>
+              <li><strong>墨刀</strong><span>界面原型与交互流程设计</span></li>
+              <li><strong>XMind</strong><span>需求拆解与功能结构梳理</span></li>
+              <li><strong>Visio</strong><span>业务流程图与数据流图</span></li>
+              <li><strong>产品方法</strong><span>需求分析、功能规划、从 0 到 1 项目推进</span></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <div class="skill-group__head"><b>6.3</b><h3>工程与内容</h3></div>
+            <ul>
+              <li><strong>开发与测试</strong><span>HarmonyOS（ArkTS / ArkUI）、SpringBoot、MySQL、微信小程序、JMeter、黑盒测试</span></li>
+              <li><strong>内容产出</strong><span>WPS 排版、可画海报、秀米排版、新闻稿与策划书撰写</span></li>
+              <li><strong>AI 工具</strong><span>WorkBuddy、豆包、ChatGPT，用于资料整理与初稿生成</span></li>
+              <li><strong>语言</strong><span>普通话二级甲等，国际人才英语考试初级合格</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 模块 07：证书荣誉 ===== -->
+    <section class="section" id="honors">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__heading-group">
+            <span class="section__number">07</span>
+            <div class="section__heading-text">
+              <span class="section__label">HONORS</span>
+              <h2 class="section__title">证书与荣誉</h2>
+            </div>
+          </div>
+          <div class="section__aside">
+            <p class="section__sub">6 份证书原件可点开查看大图，下方另附集体与个人荣誉清单。</p>
+            <ol class="section__toc">
+              <li><b>7.1</b>证书原件（6 项）</li>
+              <li><b>7.2</b>其他荣誉</li>
+            </ol>
+          </div>
+        </header>
+
+        <div class="sub-block reveal">
+          <div class="sub-block__head"><b>7.1</b><h3>证书原件</h3><span>点击卡片查看大图</span></div>
+          <div class="certificate-grid">
+            <button class="certificate-card" type="button" data-cert="images/certificates/computer-award.jpg" data-title="全国高校计算机能力挑战赛 · 山西省二等奖" aria-label="查看全国高校计算机能力挑战赛山西省二等奖证书">
+              <span class="certificate-card__image certificate-card__image--portrait"><img src="images/certificates/computer-award.jpg" alt="全国高校计算机能力挑战赛山西省二等奖证书" loading="lazy"></span>
+              <span class="certificate-card__body"><span class="certificate-card__tag">专业竞赛</span><strong>全国高校计算机能力挑战赛</strong><span>Office 高级应用 Word 科目 · 山西省二等奖</span><small>2024.11</small></span>
+            </button>
+            <button class="certificate-card" type="button" data-cert="images/certificates/qingma.jpg" data-title="青马工程学生骨干培养计划 · 结业证书" aria-label="查看青马工程结业证书">
+              <span class="certificate-card__image certificate-card__image--portrait"><img src="images/certificates/qingma.jpg" alt="青马工程学生骨干培养计划结业证书" loading="lazy"></span>
+              <span class="certificate-card__body"><span class="certificate-card__tag">骨干培养</span><strong>“青马工程”学生骨干培养计划</strong><span>第十六期雄鹰班 · 通过考核并结业</span><small>2025.06</small></span>
+            </button>
+            <button class="certificate-card" type="button" data-cert="images/certificates/student-leader.jpg" data-title="2023—2024 学年优秀学生干部" aria-label="查看优秀学生干部荣誉证书">
+              <span class="certificate-card__image"><img src="images/certificates/student-leader.jpg" alt="优秀学生干部荣誉证书" loading="lazy"></span>
+              <span class="certificate-card__body"><span class="certificate-card__tag">学生工作</span><strong>优秀学生干部</strong><span>晋中信息学院 · 学年评优</span><small>2023—2024 学年</small></span>
+            </button>
+            <button class="certificate-card" type="button" data-cert="images/certificates/club-leader.jpg" data-title="2025—2026 学年优秀社长" aria-label="查看优秀社长荣誉证书">
+              <span class="certificate-card__image certificate-card__image--portrait"><img src="images/certificates/club-leader.jpg" alt="优秀社长荣誉证书" loading="lazy"></span>
+              <span class="certificate-card__body"><span class="certificate-card__tag">社团建设</span><strong>优秀社长</strong><span>学生社团年度考核评优</span><small>2025—2026 学年</small></span>
+            </button>
+            <button class="certificate-card" type="button" data-cert="images/certificates/mandarin.jpg" data-title="普通话水平测试 · 二级甲等" aria-label="查看普通话二级甲等成绩证明">
+              <span class="certificate-card__image"><img src="images/certificates/mandarin.jpg" alt="普通话水平测试二级甲等成绩证明" loading="lazy"></span>
+              <span class="certificate-card__body"><span class="certificate-card__tag">语言表达</span><strong>普通话水平测试</strong><span>二级甲等 · 89.6 分</span><small>2026.01</small></span>
+            </button>
+            <button class="certificate-card" type="button" data-cert="images/certificates/english.jpg" data-title="国际人才英语考试 · 初级合格" aria-label="查看国际人才英语考试初级合格证书">
+              <span class="certificate-card__image"><img src="images/certificates/english.jpg" alt="国际人才英语考试初级合格证书" loading="lazy"></span>
+              <span class="certificate-card__body"><span class="certificate-card__tag">英语能力</span><strong>国际人才英语考试</strong><span>初级 · 成绩合格</span><small>2024.11</small></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sub-block reveal">
+          <div class="sub-block__head"><b>7.2</b><h3>其他荣誉</h3><span>集体与个人获奖清单</span></div>
+          <ul class="honor-list">
+            <li><strong>集体</strong><span>校级“十佳五四红旗团支部” · 校级“十佳社团” · 大学生合唱比赛优秀组织奖</span></li>
+            <li><strong>个人</strong><span>优秀学生干部 · 优秀社长 · 优秀志愿者 · 校园戏剧大赛一等奖</span></li>
+            <li><strong>培养</strong><span>“青马工程”第十六期雄鹰班结业 · 入党发展对象</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner reveal">
+        <span class="section__label section__label--light">CONTACT</span>
+        <h2 class="section__title section__title--light">欢迎与我交流</h2>
+        <p class="contact__sub">这里整理了我的联系方式。如果你对我的项目、活动或作品感兴趣，欢迎随时找我聊聊，材料可以随时补充发送。</p>
+        <div class="contact__ways">
+          <a class="contact__item" href="mailto:15135430797@163.com"><span>邮箱</span><strong>15135430797@163.com</strong></a>
+          <button class="contact__item copy-btn" type="button" data-copy="15135430797" title="点击复制手机号"><span>电话</span><strong>151-3543-0797</strong></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">范璧麒<span>。</span></p>
+      <ul class="site-footer__nav">
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#activities">活动作品</a></li>
+        <li><a href="#internship">实习经历</a></li>
+        <li><a href="#projects">项目实践</a></li>
+        <li><a href="#campus">校园经历</a></li>
+        <li><a href="#skills">技能工具</a></li>
+        <li><a href="#honors">证书荣誉</a></li>
+      </ul>
+      <p class="site-footer__copy">© 2026 范璧麒 · 晋中信息学院 · 软件工程</p>
+    </div>
+  </footer>
+
+  <dialog class="certificate-dialog" id="certificateDialog" aria-labelledby="certificateDialogTitle">
+    <div class="certificate-dialog__bar"><h2 id="certificateDialogTitle">证书预览</h2><button id="certificateDialogClose" type="button" aria-label="关闭证书预览">×</button></div>
+    <img id="certificateDialogImage" src="images/certificates/computer-award.jpg" alt="证书大图">
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite">已复制到剪贴板</div>
+
+  <button class="tune-btn" id="tuneBtn" aria-label="打开页面调整面板" aria-expanded="false" title="调整页面">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a2 2 0 1 1 2.83-2.83l.06.06a2 2 0 1 1-2.83.33v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+  </button>
+  <aside class="tune-panel" id="tunePanel" hidden aria-label="页面调整">
+    <h3>页面调整</h3>
+    <div class="tune-item"><label for="tuneHeight">人物高度 <output id="outHeight">78%</output></label><input type="range" id="tuneHeight" min="40" max="90" step="1" value="78"></div>
+    <div class="tune-item"><label for="tuneOffset">水平位置 <output id="outOffset">居中</output></label><input type="range" id="tuneOffset" min="-240" max="240" step="10" value="0"></div>
+    <div class="tune-item tune-item--check"><label for="tuneEdit"><input type="checkbox" id="tuneEdit"> 编辑页面内容</label></div>
+    <button class="tune-reset" id="tuneTextReset" type="button">恢复默认文字</button>
+    <button class="tune-reset" id="tuneReset" type="button">恢复默认布局</button>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
